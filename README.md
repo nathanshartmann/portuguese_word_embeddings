@@ -38,5 +38,37 @@ python preprocessing.py <input_file.txt> <output_file.txt>
 
 Sentence Similarity
 ```
-python evaluate.py <embedding_model.txt>
+python evaluate.py <embedding_model.txt> --lang
+```
+--lang
+```
+Brazilian Portuguese
+  br
+European Portuguese
+  eu
+```
+
+### Syntactic and Semantic analogies
+
+This method is similar to that one developed by [nlx-group](https://github.com/nlx-group/lx-dsemvectors)
+```
+python evaluate.py <embedding_model.txt> <testset.txt>
+```
+Brazilian Portuguese testsets
+```
+Only syntactic analogies
+  analogies/testset/LX-4WAnalogiesBr_syntactic.txt
+Only semantic analogies
+  analogies/testset/LX-4WAnalogiesBr_semantic.txt
+All analogies
+  analogies/testset/LX-4WAnalogiesBr.txt
+```
+European Portuguese testsets
+```
+Only syntactic analogies
+  analogies/testset/LX-4WAnalogies_syntactic.txt
+Only semantic analogies
+  analogies/testset/LX-4WAnalogies_semantic.txt
+All analogies
+  analogies/testset/LX-4WAnalogies.txt
 ```
