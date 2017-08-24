@@ -13,10 +13,10 @@ All sentences shorter than 5 tokens were removed.
 ...
 """
 
-from sys import argv, stdout
+from sys import stdout
+import argparse
 import re
 import nltk
-
 
 sent_tokenizer = nltk.data.load('tokenizers/punkt/portuguese.pickle')
 
@@ -78,15 +78,31 @@ def clean_text(text):
     return text.strip()
 
 
-def run():
-    """Main function."""
+if __name__ == '__main__':
+    # Parser descriptors
+    parser = argparse.ArgumentParser(
+        description='''Script used for cleaning corpus in order to train
+        word embeddings.''')
+
+    parser.add_argument('input',
+                        type=str,
+                        help='input text file to be cleaned')
+
+    parser.add_argument('output',
+                        type=str,
+                        help='output text file')
+
+    args = parser.parse_args()
+    f_in = args.input
+    f_out = args.output
+
     txt, wc_l = [], 0
     final = []
-    with open(argv[1], 'r', encoding='utf8') as f:
+    with open(f_in, 'r', encoding='utf8') as f:
         wc_l = sum(1 for l in f)
 
     # Clean lines.
-    with open(argv[1], 'r', encoding='utf8') as f:
+    with open(f_in, 'r', encoding='utf8') as f:
         for i, line in enumerate(f):
             stdout.write('Reading lines...')
             stdout.write('%8d/%8d \r' % (i + 1, wc_l))
@@ -104,16 +120,12 @@ def run():
                 final.append(sent)
 
     vocab, tokens = set(), 0
-    with open(argv[2], 'w', encoding='utf8') as fp:
+    with open(f_out, 'w', encoding='utf8') as fp:
         for sent in final:
             fp.write('%s\n' % sent)
             tokens += sent.count(' ') + 1
             for w in sent.split():
                 vocab.add(w)
-    print('\n')
+
     print('Tokens: ', tokens)
     print('Vocabulary: ', len(vocab))
-
-
-if __name__ == '__main__':
-    run()
