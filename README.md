@@ -38,6 +38,5 @@ python preprocessing.py <input_file.txt> <output_file.txt>
 
 Sentence Similarity
 ```
-cd evaluation/sentence_similarity/
 python evaluate.py <embedding_model.txt>
 ```
