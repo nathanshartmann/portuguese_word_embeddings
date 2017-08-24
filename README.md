@@ -14,3 +14,16 @@ http://nilc.icmc.usp.br/embeddings
 Abstract
 ------------
 Word embeddings have been found to provide meaningful representations for words in an efficient way; therefore, they have become common in Natural Language Processing systems. In this paper, we evaluated different word embedding models trained on a large Portuguese corpus, including both Brazilian and European variants. We trained 31 word embedding models using FastText, GloVe, Wang2Vec and Word2Vec. We evaluated them intrinsically on syntactic and semantic analogies and extrinsically on POS tagging and sentence semantic similarity tasks. The obtained results suggest that word analogies are not appropriate for word embedding evaluation; task-specific evaluations appear to be a better option. 
+
+How to use
+------------
+Preprocessing text file (in order to train embedding models):
+```
+python preprocessing.py <input_file.txt> <output_file.txt>
+```
+
+Semantic evaluation: Sentence Similarity
+```
+cd evaluation/sentence_similarity/
+python evaluate.py <embedding_model.txt>
+```
