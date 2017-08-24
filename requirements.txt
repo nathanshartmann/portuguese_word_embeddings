@@ -1,0 +1,15 @@
+boto==2.48.0
+bz2file==0.98
+certifi==2017.7.27.1
+chardet==3.0.4
+gensim==2.3.0
+idna==2.6
+nltk==3.2.4
+numpy==1.13.1
+requests==2.18.4
+scikit-learn==0.19.0
+scipy==0.19.1
+six==1.10.0
+sklearn==0.0
+smart-open==1.5.3
+urllib3==1.22
