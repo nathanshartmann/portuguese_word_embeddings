@@ -22,12 +22,21 @@ Word embeddings have been found to provide meaningful representations for words 
 
 ## How to use
 
-Preprocessing text file (in order to train embedding models):
+### Installing dependencies
+```
+pip install -r requirements.txt 
+```
+
+### Preprocessing text file:
+
+in order to train embedding models
 ```
 python preprocessing.py <input_file.txt> <output_file.txt>
 ```
 
-Semantic evaluation: Sentence Similarity
+### Semantic evaluation:
+
+Sentence Similarity
 ```
 cd evaluation/sentence_similarity/
 python evaluate.py <embedding_model.txt>
