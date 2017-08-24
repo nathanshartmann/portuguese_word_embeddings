@@ -20,12 +20,21 @@ Word embeddings have been found to provide meaningful representations for words 
 
 ---
 
-## How to use
+### Contents
 
-### Installing dependencies
+* [Installation](#installation)
+* [Usage](#usage)
+  * [Preprocessing text file](#preprocessing)
+  * [Semantic evaluation](#semantic_evaluation)
+  * [Syntactic and Semantic analogies](#analogies)
+
+
+## Installation
 ```
 pip install -r requirements.txt 
 ```
+
+## Usage
 
 ### Preprocessing text file
 
