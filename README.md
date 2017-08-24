@@ -24,9 +24,9 @@ Word embeddings have been found to provide meaningful representations for words 
 
 * [Installation](#installation)
 * [Usage](#usage)
-  * [Preprocessing text file](#preprocessing)
-  * [Semantic evaluation](#semantic_evaluation)
-  * [Syntactic and Semantic analogies](#analogies)
+  * [Preprocessing text file](#Preprocessing text file)
+  * [Semantic evaluation](#Semantic evaluation)
+  * [Syntactic and Semantic analogies](#Syntactic and Semantic analogies)
 
 
 ## Installation
