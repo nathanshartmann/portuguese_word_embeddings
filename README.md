@@ -28,6 +28,7 @@ Word embeddings have been found to provide meaningful representations for words 
   * [Semantic evaluation](#semantic-evaluation)
   * [Syntactic and Semantic analogies](#syntactic-and-semantic-analogies)
 
+---
 
 ## Installation
 ```
@@ -63,21 +64,31 @@ This method is similar to that one developed by [nlx-group](https://github.com/n
 ```
 python evaluate.py <embedding_model.txt> <testset.txt>
 ```
-Brazilian Portuguese testsets
-```
+#### Brazilian Portuguese testsets
+
 Only syntactic analogies
-  analogies/testset/LX-4WAnalogiesBr_syntactic.txt
+```
+analogies/testset/LX-4WAnalogiesBr_syntactic.txt
+```
 Only semantic analogies
-  analogies/testset/LX-4WAnalogiesBr_semantic.txt
+```
+analogies/testset/LX-4WAnalogiesBr_semantic.txt
+```
 All analogies
-  analogies/testset/LX-4WAnalogiesBr.txt
 ```
-European Portuguese testsets
+analogies/testset/LX-4WAnalogiesBr.txt
 ```
+#### European Portuguese testsets
+
 Only syntactic analogies
-  analogies/testset/LX-4WAnalogies_syntactic.txt
+```
+analogies/testset/LX-4WAnalogies_syntactic.txt
+```
 Only semantic analogies
-  analogies/testset/LX-4WAnalogies_semantic.txt
+```
+analogies/testset/LX-4WAnalogies_semantic.txt
+```
 All analogies
+```
   analogies/testset/LX-4WAnalogies.txt
 ```
