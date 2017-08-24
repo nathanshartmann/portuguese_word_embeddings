@@ -27,14 +27,14 @@ Word embeddings have been found to provide meaningful representations for words 
 pip install -r requirements.txt 
 ```
 
-### Preprocessing text file:
+### Preprocessing text file
 
 in order to train embedding models
 ```
 python preprocessing.py <input_file.txt> <output_file.txt>
 ```
 
-### Semantic evaluation:
+### Semantic evaluation
 
 Sentence Similarity
 ```
