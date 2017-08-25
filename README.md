@@ -26,7 +26,8 @@ Word embeddings have been found to provide meaningful representations for words 
 * [Usage](#usage)
   * [Preprocessing text file](#preprocessing-text-file)
   * [Semantic evaluation](#semantic-evaluation)
-  * [Syntactic and Semantic analogies](#syntactic-and-semantic-analogies)
+  * [POS Tagging evaluation](#pos-tagging-evaluation)
+  * [Syntactic and Semantic analogies evaluation](#syntactic-and-semantic-analogies-evaluation)
 
 ---
 
@@ -61,7 +62,11 @@ European Portuguese
 eu
 ```
 
-### Syntactic and Semantic analogies
+### POS Tagging evaluation
+
+POS tagging evaluator is not available yet. In order to do so, please use source code from [nlpnet](https://github.com/erickrf/nlpnet).
+
+### Syntactic and Semantic analogies evaluation
 
 This method is similar to that one developed by [nlx-group](https://github.com/nlx-group/lx-dsemvectors)
 ```
