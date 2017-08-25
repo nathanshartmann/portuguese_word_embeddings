@@ -50,12 +50,14 @@ Sentence Similarity
 ```
 python evaluate.py <embedding_model.txt> --lang
 ```
---lang
-```
+Parameter **--lang** can be set depending on portuguese variant chosen.
 Brazilian Portuguese
-  br
+```
+br
+```
 European Portuguese
-  eu
+``
+eu
 ```
 
 ### Syntactic and Semantic analogies
