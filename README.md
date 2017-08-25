@@ -25,7 +25,7 @@ Word embeddings have been found to provide meaningful representations for words 
 * [Installation](#installation)
 * [Usage](#usage)
   * [Preprocessing text file](#preprocessing-text-file)
-  * [Semantic evaluation](#semantic-evaluation)
+  * [Semantic Similarity evaluation](#semantic-similarity-evaluation)
   * [POS Tagging evaluation](#pos-tagging-evaluation)
   * [Syntactic and Semantic analogies evaluation](#syntactic-and-semantic-analogies-evaluation)
 
@@ -45,7 +45,7 @@ in order to train embedding models
 python preprocessing.py <input_file.txt> <output_file.txt>
 ```
 
-### Semantic evaluation
+### Semantic Similarity evaluation
 
 Sentence Similarity
 ```
