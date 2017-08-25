@@ -71,27 +71,27 @@ python evaluate.py <embedding_model.txt> <testset.txt>
 
 Only syntactic analogies
 ```
-analogies/testset/LX-4WAnalogiesBr_syntactic.txt
+python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogiesBr_syntactic.txt
 ```
 Only semantic analogies
 ```
-analogies/testset/LX-4WAnalogiesBr_semantic.txt
+python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogiesBr_semantic.txt
 ```
 All analogies
 ```
-analogies/testset/LX-4WAnalogiesBr.txt
+python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogiesBr.txt
 ```
 #### European Portuguese testsets
 
 Only syntactic analogies
 ```
-analogies/testset/LX-4WAnalogies_syntactic.txt
+python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogies_syntactic.txt
 ```
 Only semantic analogies
 ```
-analogies/testset/LX-4WAnalogies_semantic.txt
+python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogies_semantic.txt
 ```
 All analogies
 ```
-  analogies/testset/LX-4WAnalogies.txt
+python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogies.txt
 ```
