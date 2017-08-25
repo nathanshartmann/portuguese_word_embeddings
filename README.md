@@ -51,12 +51,13 @@ Sentence Similarity
 python evaluate.py <embedding_model.txt> --lang
 ```
 Parameter **--lang** can be set depending on portuguese variant chosen.
+
 Brazilian Portuguese
 ```
 br
 ```
 European Portuguese
-``
+```
 eu
 ```
 
