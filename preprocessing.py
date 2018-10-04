@@ -54,6 +54,7 @@ re_trim = re.compile(r' +', re.UNICODE)
 def clean_text(text):
     """Apply all regex above to a given string."""
     text = text.lower()
+    text = text.replace('\xa0', ' ')
     text = re_tree_dots.sub('...', text)
     text = re.sub('\.\.\.', '', text)
     text = re_remove_brackets.sub('', text)
