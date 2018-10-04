@@ -100,3 +100,4 @@ All analogies
 ```
 python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogies.txt
 ```
+
