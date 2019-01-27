@@ -70,34 +70,34 @@ POS tagging evaluator is not available yet. In order to do so, please use source
 
 This method is similar to that one developed by [nlx-group](https://github.com/nlx-group/lx-dsemvectors)
 ```
-python evaluate.py <embedding_model.txt> <testset.txt>
+python analogies.py -m <embedding_model.txt> -t <testset.txt> 
 ```
 #### Brazilian Portuguese testsets
 
 Only syntactic analogies
 ```
-python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogiesBr_syntactic.txt
+python analogies.py -m <embedding_model.txt> -t analogies/testset/LX-4WAnalogiesBr_syntactic.txt
 ```
 Only semantic analogies
 ```
-python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogiesBr_semantic.txt
+python analogies.py -m <embedding_model.txt> -t analogies/testset/LX-4WAnalogiesBr_semantic.txt
 ```
 All analogies
 ```
-python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogiesBr.txt
+python analogies.py -m <embedding_model.txt> -t analogies/testset/LX-4WAnalogiesBr.txt
 ```
 #### European Portuguese testsets
 
 Only syntactic analogies
 ```
-python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogies_syntactic.txt
+python analogies.py -m <embedding_model.txt> -t analogies/testset/LX-4WAnalogies_syntactic.txt
 ```
 Only semantic analogies
 ```
-python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogies_semantic.txt
+python analogies.py -m <embedding_model.txt> -t analogies/testset/LX-4WAnalogies_semantic.txt
 ```
 All analogies
 ```
-python evaluate.py <embedding_model.txt> analogies/testset/LX-4WAnalogies.txt
+python analogies.py -m <embedding_model.txt> -t analogies/testset/LX-4WAnalogies.txt
 ```
 
