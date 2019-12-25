@@ -20,6 +20,8 @@ from os import path
 import pickle
 import argparse
 
+from preprocessing import clean_text
+
 DATA_DIR = 'sentence_similarity/data/'
 TEST_DIR = path.join(DATA_DIR, 'assin-test-gold/')
 
@@ -28,8 +30,8 @@ def gensim_embedding_difference(data, field1, field2):
     """Calculate the similarity between the sum of all embeddings."""
     distances = []
     for pair in data:
-        e1 = [i if i in embeddings else 'unk' for i in pair[field1]]
-        e2 = [i if i in embeddings else 'unk' for i in pair[field2]]
+        e1 = [i if clean_text(i) in embeddings else 'unk' for i in pair[field1]]
+        e2 = [i if clean_text(i) in embeddings else 'unk' for i in pair[field2]]
         distances.append([embeddings.n_similarity(e1, e2)])
     return distances
 
