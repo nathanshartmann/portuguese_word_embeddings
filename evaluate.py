@@ -26,12 +26,20 @@ DATA_DIR = 'sentence_similarity/data/'
 TEST_DIR = path.join(DATA_DIR, 'assin-test-gold/')
 
 
-def gensim_embedding_difference(data, field1, field2):
-    """Calculate the similarity between the sum of all embeddings."""
+def gensim_embedding_difference(data, field1, field2, clean=False):
+    """
+    Calculate the similarity between the sum of all embeddings.
+    Setting clean to False will reproduce the results that were reported by Hartmann et al. .
+    However, setting it to True will universally improve the score of the evaluated embeddings.    
+    """
     distances = []
     for pair in data:
-        e1 = [clean_text(i) for i in pair[field1] if clean_text(i) in embeddings]
-        e2 = [clean_text(i) for i in pair[field2] if clean_text(i) in embeddings]
+        if clean:
+            e1 = [clean_text(i) for i in pair[field1] if clean_text(i) in embeddings]
+            e2 = [clean_text(i) for i in pair[field2] if clean_text(i) in embeddings]
+        else:
+            e1 = [i if i in embeddings else 'unk' for i in pair[field1]]
+            e2 = [i if i in embeddings else 'unk' for i in pair[field2]]            
         distances.append([embeddings.n_similarity(e1, e2)])
     return distances
 
