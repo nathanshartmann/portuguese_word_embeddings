@@ -12,4 +12,4 @@ scipy==0.19.1
 six==1.10.0
 sklearn==0.0
 smart-open==1.5.3
-urllib3==1.22
+urllib3==1.24.2
