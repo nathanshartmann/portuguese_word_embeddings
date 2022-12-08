@@ -1,6 +1,6 @@
 boto==2.48.0
 bz2file==0.98
-certifi==2017.7.27.1
+certifi==2022.12.7
 chardet==3.0.4
 gensim==2.3.0
 idna==2.6
