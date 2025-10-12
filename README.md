@@ -12,7 +12,7 @@ Paper can be read:
 https://arxiv.org/abs/1708.06025
 
 Trained embeddings models:
-http://nilc.icmc.usp.br/embeddings
+https://huggingface.co/collections/nilc-nlp/nilc-embeddings-68cf03b18954a7ba7ff8b498
 
 ### Abstract
 
